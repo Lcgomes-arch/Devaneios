@@ -156,7 +156,7 @@ div#lua{
     }
 
     div.imagem {
-        background-attachment: scroll;
+        background-attachment: fixed;
     }
 
     div.imagem > p {
@@ -198,7 +198,7 @@ div#lua{
         width: 100%;
         min-height: 500px;
         box-sizing: border-box;
-        background-attachment: scroll;
+        background-attachment: fixed;
 
         padding-top: 10vh;
         padding-bottom: 10vh;
@@ -246,6 +246,7 @@ div#lua{
 
     div.imagem {
         min-height: 450px;
+        background-attachment: fixed;
     }
 
     div.imagem > p {
