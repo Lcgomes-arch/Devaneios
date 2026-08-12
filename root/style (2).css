@@ -3,13 +3,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cookie&family=Felipa&family=Lavishly+Yours&family=Manufacturing+Consent&family=MonteCarlo&family=Tangerine:wght@400;700&family=UnifrakturMaguntia&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
+*{
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
-html, body {
+html, body{
     background-color: white;
     min-height: 100vh;
     width: 100%;
@@ -49,22 +49,22 @@ footer{
     font-size: 2.1em;
    
 }
-div.normal {
+div.normal{
     background-color: white;
     padding-top: 20px;
     padding-bottom: 200px;
     text-align: center;
     margin: auto;
-    max-width: 900px;
-    width: 100%;
+   max-width: 900px;
+   width: 100%;
+    
 }
 
-div.imagem {
+div.imagem{
     background-color: rgb(51, 51, 51);
     color: white;
-    background-attachment: fixed;
+  background-attachment: fixed;
     margin: auto;
-    width: 100%;
 }
 
 div{
@@ -131,13 +131,9 @@ div#lua{
      box-shadow: inset 4px 4px 10px 0px black;
 }
 
-/* =========================================
-   RESPONSIVIDADE PARA TABLETS
-   ========================================= */
+    @media screen and (min-width: 601px) and (max-width: 900px) {
 
-@media screen and (min-width: 601px) and (max-width: 900px) {
-
-    header > h1 {
+         header > h1 {
         font-size: 2.3em;
         padding-left: 20px;
         padding-right: 20px;
@@ -175,33 +171,17 @@ div#lua{
         padding-left: 20px;
         padding-right: 20px;
     }
-}
+    }
 
-
-/* =========================================
-   RESPONSIVIDADE PARA CELULARES
-   ========================================= */
-
-@media screen and (max-width: 600px) {
-
-    /* TÍTULO PRINCIPAL */
-
-    header > h1 {
+    @media screen and (max-width: 600px){
+         header > h1 {
         font-size: 2em;
         padding: 15px 10px;
     }
-
-
-    /* TÍTULOS DAS SEÇÕES */
-
     section > h2 {
         font-size: 1.9em;
         padding: 30px 10px 15px;
     }
-
-
-    /* ÁREAS DE TEXTO NORMAL */
-
     div.normal {
         width: 100%;
         max-width: 100%;
@@ -214,33 +194,16 @@ div#lua{
         font-size: 1.3em;
         text-align: justify;
     }
-
-
-    /* ÁREAS COM IMAGEM */
-
-    div.imagem {
+     div.imagem {
         width: 100%;
         min-height: 500px;
         box-sizing: border-box;
-
-        /*
-        No celular o fixed pode causar problemas
-        de desempenho e posicionamento.
-        */
         background-attachment: scroll;
 
         padding-top: 10vh;
         padding-bottom: 10vh;
     }
-
-
-    /* TEXTO SOBRE AS IMAGENS */
-
-    div.imagem > p {
-
-        /*
-        Retiramos a largura fixa de 400px
-        */
+     div.imagem > p {
         width: auto;
         max-width: 100%;
 
@@ -254,22 +217,14 @@ div#lua{
         font-size: 1.5em;
         text-align: justify;
     }
-
-
-    /* RODAPÉ */
-
     footer {
         font-size: 1.8em;
         padding: 15px 10px;
     }
-}
 
+    }
 
-/* =========================================
-   CELULARES MUITO PEQUENOS
-   ========================================= */
-
-@media screen and (max-width: 380px) {
+    @media screen and (max-width: 380px) {
 
     header > h1 {
         font-size: 1.8em;
@@ -307,4 +262,3 @@ div#lua{
         font-size: 1.6em;
     }
 }
-
