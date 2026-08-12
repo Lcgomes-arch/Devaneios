@@ -1,0 +1,310 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cookie&family=Felipa&family=Lavishly+Yours&family=Manufacturing+Consent&family=MonteCarlo&family=Tangerine:wght@400;700&family=UnifrakturMaguntia&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: white;
+    min-height: 100vh;
+    width: 100%;
+}
+
+section > h2{
+    background-color: white;
+    font-family: "Tangerine", cursive;
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: bolder;
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+}
+
+header{
+    background-color: black;
+    color: white;
+    font-family: "Tangerine", cursive;
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: bolder;
+    font-size: 2.6em;
+
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: "Tangerine", cursive;
+    font-size: 2.1em;
+   
+}
+div.normal {
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 200px;
+    text-align: center;
+    margin: auto;
+    max-width: 900px;
+    width: 100%;
+}
+
+div.imagem {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    background-attachment: fixed;
+    margin: auto;
+    width: 100%;
+}
+
+div{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 1.5em;
+}
+
+div.imagem > p{
+    background-color: rgba(0, 0, 0, 0.315);
+    width: 400px;
+    padding-left: 20px;
+    text-align: justify;
+    padding-right: 20px;
+    margin-left: 30px;
+    font-family: "Tangerine", cursive;
+    font-size: 1.8em;
+    padding-top: 10px;
+    text-shadow: 1px 1px 0px black;
+}
+
+div.normal>p{
+    font-family: "Cookie", cursive;
+    font-size: 1.4em;
+}
+
+
+div#farol{
+    background-image: url(./imagens/pordosol.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+div#olho{
+    background-image: url(./imagens/images.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    box-shadow: inset 4px 4px 10px 0px rgba(0, 0, 0, 0.644);
+}
+
+div#campo{
+    background-image: url(./imagens/campodeflores.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+     
+}
+
+div#diamante{
+    background-image: url(./imagens/diamantes.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:  center center;
+    box-shadow: inset 4px 4px 10px 0px black;
+}
+
+div#lua{
+    background-image: url(./imagens/lua.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+     box-shadow: inset 4px 4px 10px 0px black;
+}
+
+/* =========================================
+   RESPONSIVIDADE PARA TABLETS
+   ========================================= */
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+
+    header > h1 {
+        font-size: 2.3em;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    section > h2 {
+        font-size: 2.1em;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    div.normal {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 120px;
+    }
+
+    div.normal > p {
+        font-size: 1.35em;
+    }
+
+    div.imagem {
+        background-attachment: scroll;
+    }
+
+    div.imagem > p {
+        width: 50%;
+        max-width: 400px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    footer {
+        font-size: 2em;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+/* =========================================
+   RESPONSIVIDADE PARA CELULARES
+   ========================================= */
+
+@media screen and (max-width: 600px) {
+
+    /* TÍTULO PRINCIPAL */
+
+    header > h1 {
+        font-size: 2em;
+        padding: 15px 10px;
+    }
+
+
+    /* TÍTULOS DAS SEÇÕES */
+
+    section > h2 {
+        font-size: 1.9em;
+        padding: 30px 10px 15px;
+    }
+
+
+    /* ÁREAS DE TEXTO NORMAL */
+
+    div.normal {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+
+        padding: 20px 20px 100px 20px;
+    }
+
+    div.normal > p {
+        font-size: 1.3em;
+        text-align: justify;
+    }
+
+
+    /* ÁREAS COM IMAGEM */
+
+    div.imagem {
+        width: 100%;
+        min-height: 500px;
+        box-sizing: border-box;
+
+        /*
+        No celular o fixed pode causar problemas
+        de desempenho e posicionamento.
+        */
+        background-attachment: scroll;
+
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+
+
+    /* TEXTO SOBRE AS IMAGENS */
+
+    div.imagem > p {
+
+        /*
+        Retiramos a largura fixa de 400px
+        */
+        width: auto;
+        max-width: 100%;
+
+        box-sizing: border-box;
+
+        margin-left: 15px;
+        margin-right: 15px;
+
+        padding: 10px 15px;
+
+        font-size: 1.5em;
+        text-align: justify;
+    }
+
+
+    /* RODAPÉ */
+
+    footer {
+        font-size: 1.8em;
+        padding: 15px 10px;
+    }
+}
+
+
+/* =========================================
+   CELULARES MUITO PEQUENOS
+   ========================================= */
+
+@media screen and (max-width: 380px) {
+
+    header > h1 {
+        font-size: 1.8em;
+    }
+
+    section > h2 {
+        font-size: 1.7em;
+    }
+
+    div.normal {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 80px;
+    }
+
+    div.normal > p {
+        font-size: 1.2em;
+    }
+
+    div.imagem {
+        min-height: 450px;
+    }
+
+    div.imagem > p {
+        margin-left: 10px;
+        margin-right: 10px;
+
+        padding-left: 12px;
+        padding-right: 12px;
+
+        font-size: 1.35em;
+    }
+
+    footer {
+        font-size: 1.6em;
+    }
+}
+
